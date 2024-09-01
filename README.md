@@ -20,7 +20,6 @@ The primary aim of the Website is to revolutionize the way users interact with d
   Advanced AI Integration: Utilizing the latest advancements in AI and machine learning, we ensure that our voice assistant can understand and respond to a wide range of queries with high accuracy.
   Continuous Improvement: We are committed to continually refining and enhancing our AI models based on user feedback and technological advancements to ensure the highest quality of service.
   Data Privacy and Security: Protecting user data is a top priority. We implement stringent security measures to safeguard user information and ensure privacy.
-  
 # Mission  
 Our mission is to deliver an unparalleled voice interaction experience that transforms how users interact with digital content. By harnessing the power of AI, we aim to make voice assistance an integral part of everyday digital interactions, enhancing productivity, accessibility, and user satisfaction. 
 
