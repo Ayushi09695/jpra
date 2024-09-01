@@ -1,0 +1,355 @@
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+@font-face {
+    font-family: 'MyFont';
+    src: url('Fanhenpersonal.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    color: whitesmoke;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: visible;
+}  
+
+header {
+    position: relative;
+    z-index: 2;
+    height: 100px;
+    width: 96%;
+    margin-inline:2% ;
+}   
+
+h1 {
+    text-align: center;
+}
+
+video {
+    display: block;
+    height: 100svh; 
+    position: fixed;
+    top: 0;
+    object-fit: cover;
+}
+
+main {
+    position: relative;
+    margin-left: 2%;
+}
+
+#types {
+    margin-top: 100svh;
+    display: flex;
+    justify-content: space-evenly;
+    margin-inline: 5%;
+    width: 90%;
+}
+
+#type1, #type2, #type3, #type4 {
+    background-color: aliceblue;
+    height: 300px;
+    width: 20.25%;
+}
+
+#type1, #type2, #type3 {
+    margin-right: 3%;
+    margin-bottom: 60px;
+}
+
+#walle {
+    position: sticky;
+    bottom: 0; /* Sticks to the bottom of the viewport */
+    left: 2%; /* Adjust this value as needed */
+    filter: drop-shadow(.1rem .1rem rgba(255, 255, 255, 0.255));
+    z-index: 1000; /* Ensure it's above the chatbot */
+}
+
+#blackout {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: rgb(0, 0, 0);
+}
+
+#chatbot {
+    position: relative !important;
+    top: 0 !important;
+    visibility: hidden; 
+    z-index: 999; 
+}
+
+#assistant {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #2a2a2a;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+#status {
+    display: none; 
+}
+
+.listening #status {
+    display: block;
+}
+
+
+
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    position: relative;
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: color 0.3s, background-color 0.3s;
+    display: block;
+}
+
+.nav-links a:hover,
+.nav-links a:focus {
+    color: #333;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    white-space: nowrap;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    transform: translateY(-10px);
+}
+
+.dropdown-menu li {
+    margin: 0;
+}
+
+.dropdown-menu a {
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-menu a:hover {
+    background-color: #555;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle .bar {
+    background-color: white;
+    height: 3px;
+    width: 25px;
+    margin: 3px 0;
+    transition: 0.3s;
+}
+
+
+
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .dropdown-menu {
+        position: static;
+        display: none;
+    }
+
+    .dropdown.active .dropdown-menu {
+        display: block;
+    }
+}
+
+.floating-text {
+    font-family: 'MyFont', sans-serif;
+    position: fixed;
+    top: 50%;
+    right: 0;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    font-size: 3rem;
+    z-index: 1000;
+    line-height: 4rem;
+}
+
+h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.container{
+    color:black;
+    background: rgba(255, 255, 255, 0.638);
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: 150px;
+    display: flex;
+    align-items:center;
+    justify-content: start;
+}
+.goal{
+    height:fit-content;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content:end;
+    justify-items: center;
+}
+#even{
+    width:80%;
+}
+/* Footer Styles */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position:relative;
+    width: 100%;
+    bottom: 0;
+    margin-top: auto;
+}
+footer {
+    background-color: #333;  /* Background color of the footer */
+    color: white;  /* Text color */
+    padding: 20px 0;  /* Padding for top and bottom */
+    text-align: center;  /* Center align text */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;  /* Center the content */
+}
+
+footer ul {
+    list-style: none;  /* Remove bullets from list */
+    padding: 0;
+    margin: 0;
+}
+
+footer ul li {
+    display: inline;  /* Display list items inline */
+    margin: 0 10px;  /* Spacing between list items */
+}
+
+footer ul li a {
+    color: white;  /* Text color for links */
+    text-decoration: none;  /* Remove underline from links */
+    font-weight: bold;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;  /* Add underline on hover */
+}
+
+
+
