@@ -1,6 +1,6 @@
 # jpra
 
-## Description
+## Introduction
 
 The AI Voice Assistance Website developed by Team JPRA represents the forefront of intelligent voice interaction technology. Designed to enhance user experiences through seamless and intuitive voice interactions, this website leverages cutting-edge AI technologies to provide a sophisticated, responsive, and user-centric service.
 ## Aim
@@ -15,7 +15,13 @@ The primary aim of the Website is to revolutionize the way users interact with d
   Improve Accessibility: To ensure that individuals with disabilities or those who prefer voice commands can access and utilize website features with ease.
   Optimize Efficiency: To streamline user tasks and reduce the time required to perform actions by leveraging advanced natural language processing (NLP) and machine learning algorithms.
   Integrate Advanced AI Technologies: To incorporate state-of-the-art AI technologies that enhance understanding, context recognition, and response accuracy.
+  ## Focus
+  User-Centric Design: We focus on creating a user-friendly interface that allows seamless voice interactions. Our design prioritizes clarity, ease of use, and natural conversational flow.
+  Advanced AI Integration: Utilizing the latest advancements in AI and machine learning, we ensure that our voice assistant can understand and respond to a wide range of queries with high accuracy.
+  Continuous Improvement: We are committed to continually refining and enhancing our AI models based on user feedback and technological advancements to ensure the highest quality of service.
+  Data Privacy and Security: Protecting user data is a top priority. We implement stringent security measures to safeguard user information and ensure privacy.
   
+# Mission  
 Our mission is to deliver an unparalleled voice interaction experience that transforms how users interact with digital content. By harnessing the power of AI, we aim to make voice assistance an integral part of everyday digital interactions, enhancing productivity, accessibility, and user satisfaction. 
 
 ## Installation
